@@ -1,0 +1,369 @@
+@font-face{
+    font-family: 'Gothic';
+    src: url('assests/Gothic\ 821\ Condensed.woff');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic';
+}
+:root{
+    --fresh-mint: #275848;
+    --dark-mint: #163027;
+    --banana-skin: #f6d700;
+    --pure-white: #ffffff;
+    --mint-cream: #fafbf8;
+    --rose-white: #f1eaea;
+    --dark-charcoal: #2c2c2c;
+}
+/* basic styling*/
+body{
+    background-color: var(--mint-cream);
+}
+.bg-fresh-mint{
+    background-color: var(--fresh-mint);
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.between{
+    justify-content: space-between;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.wrapper{
+    padding-inline:1rem;
+}
+.p-block{
+    padding-block: 7rem;
+}
+/*header styling*/
+.nav-bar{
+    min-height: 13vh;
+}
+.link{
+    color: var(--mint-cream);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+}
+.logo{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--rose-white);
+}
+.nav-list{
+    gap: 2.5rem;
+}
+.hamburger{
+    color: var(--pure-white);
+    font-size: 1.6rem;
+    display: none;
+}
+
+/*hero-section styling*/
+
+.herocontent{
+    min-height: 100vh;
+    position: relative;
+}
+h1{
+    font-size: 30vw;
+    color: var(--pure-white);
+    letter-spacing: -1rem;
+    line-height: 100%;
+    text-shadow: 0 0 1.5rem var(--dark-mint);
+}
+.wavy-shape{
+    position: absolute;
+    bottom: 0;
+}
+.shoe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)rotate(-20deg);
+    width: 54vw;
+}
+.hero-inner{
+    position: absolute;
+    width: 100%;
+    min-height: 30vh;
+    align-items: flex-end;
+}
+.hero-section{
+    border-radius: 0 0 5rem 5rem;
+}
+.circle{
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--banana-skin);
+    align-self: flex-start;
+    position: relative;
+
+}
+ p{
+    max-width: 320px;
+    color: var(--dark-mint);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.circle::before{
+    top: 0%;
+    left: 15%;
+    content: '# 1 Best Sneakers';
+    position: absolute;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    text-shadow: .3rem .3rem 0 var(--pure-white);
+    transform: rotate(-20deg);
+}
+.cylinder-inner{
+    background: var(--banana-skin);
+    width: 100%;
+    min-height: 17vh;
+    border-radius: 100vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+h4{
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+
+}
+.cylinder{
+    padding: 1rem;
+
+}
+.profile{
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 5rem;
+    border: .3rem solid var(--pure-white);
+    overflow: hidden;
+}
+.profile img,
+.category-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profile:nth-child(2),
+.profile:nth-child(3){
+    margin-left: -1rem;
+}
+h5{
+    font-size: 3vw;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+}
+.btn{
+    background: var(--fresh-mint);
+    color: var(--pure-white);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 500vw;
+    border: .4rem solid var(--pure-white);
+}
+h2{
+    font-size: 7.5vw;
+    color: var(--fresh-mint);
+    text-transform: uppercase;
+    letter-spacing: -.25rem;
+}
+.capsule{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 100vw;
+    background: linear-gradient(90deg,
+    pink,
+    #d4d4d4);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.capsule img{
+    position: absolute;
+    width: 10rem;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    transition: .3s ease-in-out;
+}
+.capsule:hover img{
+    transform: translate(-50%, -35%) rotate(45deg);
+}
+h3{
+    font-size: 6vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+    z-index: 3;
+}
+.card-container{
+    gap: 1rem;
+    margin-top: -2rem;
+    overflow: hidden;
+}
+.card{
+    flex: 1;
+    background: var(--rose-white);
+    height: 70vh;
+    border-radius: 5rem;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card .btn{
+    position: absolute;
+    bottom: -100px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+.card:hover .btn{
+    bottom: 30px;
+}
+.card .btn:hover{
+    background: var(--banana-skin);
+    color: var(--fresh-mint);
+}
+.product .para,
+.product h3{
+    color: var(--pure-white);
+}
+.icon-btn{
+    width: 5rem;
+    aspect-ratio: 1;
+    outline: .4rem solid var(--pure-white);
+    background: var(--banana-skin);
+    color: var(--fresh-mint);
+    font-size: 2rem;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 5rem;
+    transition: .5s ease-in-out;
+}
+.category .cylinder-inner{
+    background: var(--dark-mint);
+}
+.category .cylinder-inner h4{
+    color: var(--pure-white);
+}
+.m-top{
+    margin-top: 5rem;
+}
+.category-image{
+    width: 13rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-10%);
+    box-shadow: black 0 2rem 6rem 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    pointer-events: none;
+    z-index: 4;
+}
+.category{
+    position: relative;
+}
+.category .cylinder-inner:hover ~ .category-image{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,-50%);
+}
+.category .cylinder-inner:hover{
+    background: var(--banana-skin);
+}
+.category .cylinder-inner:hover h4{
+    color: var(--fresh-mint);
+}
+.category .cylinder-inner:hover .icon-btn{
+    background: var(--fresh-mint);
+    color: var(--banana-skin);
+    transform: rotate(-50deg);
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.contact.icon-btn{
+    background: var(--fresh-mint);
+    color: var(--banana-skin);
+}
+.footer-list{
+    justify-content: center;
+    min-height: 17vh;
+}
+.footer-link{
+    background: var(--rose-white);
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+    transition: .3s ease-in-out;
+}
+.footer-link:hover{
+    background: var(--fresh-mint);
+    color: var(--pure-white);
+}
+.copyright{
+    padding-block: 1rem;
+}
+.copyright p{
+    color: var(--fresh-mint);
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+}
+.contact-image{
+    position: absolute;
+    width: 12rem;
+    left: 60%;
+    top: 170px;
+    filter: drop-shadow(0 1rem 1rem black);
+    transition: all .3s ease-in-out;
+}
+.contact:hover .contact-image{
+    top: 10px;
+    transform: rotate(-20deg);
+}
+.contact:hover .icon-btn{
+    transform: rotate(-50deg);
+    background: var(--fresh-mint);
+    color: var(--banana-skin);
+}
